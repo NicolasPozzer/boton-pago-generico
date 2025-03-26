@@ -56,7 +56,7 @@ const AppHeader = (): JSX.Element => {
         <CHeaderNav className="d-none d-md-flex">
           <CNavItem>
             <CNavLink href="/" as={Link}>
-              Dashboard
+              Home
             </CNavLink>
           </CNavItem>
           <CNavItem>
@@ -124,9 +124,6 @@ const AppHeader = (): JSX.Element => {
         >
           <CIcon icon={cilApplicationsSettings} size="lg" />
         </CHeaderToggler>
-      </CContainer>
-      <CContainer className="px-4" fluid>
-        <AppBreadcrumb />
       </CContainer>
     </CHeader>
   )

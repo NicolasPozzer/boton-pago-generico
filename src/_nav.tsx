@@ -1,6 +1,6 @@
 import React, { ElementType } from 'react'
 import {
-  cibPingup,
+  cibPingup, cilApple,
   cilBell,
   cilCalculator,
   cilCalendar,
@@ -38,8 +38,8 @@ export type NavItem = {
 const _nav = [
   {
     component: CNavItem,
-    name: 'Dashboard',
-    icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
+    name: 'Home',
+    icon: <CIcon icon={cilApple} customClassName="nav-icon" />,
     href: '/',
   },
   {

@@ -7,10 +7,10 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
   return (
     <>
       <AppSidebar />
-      <div className="wrapper d-flex flex-column min-vh-100">
+      <div className="wrapper d-flex flex-column min-vh-100 bg-white">
         <AppHeader />
         <div className="body flex-grow-1">
-          <CContainer lg className="px-4">{children}</CContainer>
+          <CContainer lg className="px-4 ">{children}</CContainer>
         </div>
         <AppFooter />
       </div>

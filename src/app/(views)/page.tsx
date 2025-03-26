@@ -34,27 +34,28 @@ export default function HomePage() {
                 </p>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <a href="/postulacion/pago-postulacion">
-                  <Button className="bg-yellow-400 hover:bg-yellow-500 text-black">
-                    <CreditCard className="mr-2 h-4 w-4" /> Realizar Pago de Prueba
-                  </Button>
+                    <Button className="bg-yellow-400 hover:bg-yellow-500 text-black">
+                      <CreditCard className="mr-2 h-4 w-4"/> Realizar Pago de Prueba
+                    </Button>
                   </a>
                   <Button variant="outline" className="border-gray-200">
                     Conoce más
                   </Button>
                 </div>
                 <div className="flex items-center gap-2 text-sm">
-                  <ShieldCheck className="h-4 w-4 text-green-500" />
+                  <ShieldCheck className="h-4 w-4 text-green-500"/>
                   <span className="text-gray-500">Datos protegidos con encriptación de 256-bit</span>
                 </div>
               </div>
               <div className="flex justify-center lg:justify-end">
                 <div className="relative w-full max-w-[500px] aspect-video rounded-xl overflow-hidden shadow-2xl">
-                  <div className="absolute inset-0 bg-gradient-to-br from-yellow-400/20 to-yellow-500/40 rounded-xl"></div>
+                  <div
+                    className="absolute inset-0 bg-gradient-to-br from-yellow-400/20 to-yellow-500/40 rounded-xl"></div>
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="bg-white p-6 rounded-xl shadow-lg w-[80%] max-w-[350px]">
                       <div className="flex items-center justify-between mb-4">
                         <div className="flex items-center gap-2">
-                          <CreditCard className="h-5 w-5 text-yellow-500" />
+                          <CreditCard className="h-5 w-5 text-yellow-500"/>
                           <span className="font-medium">Pago Seguro</span>
                         </div>
                         <Badge variant="outline" className="bg-green-50 text-green-700 border-green-200">
@@ -80,7 +81,7 @@ export default function HomePage() {
         </section>
 
         {/* Features Section */}
-        <section id="features" className="w-full py-12 md:py-24 bg-gray-50">
+        <section id="features" className="w-full py-12 md:py-24 bg-gray-100 rounded-lg rounded-4">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -96,70 +97,70 @@ export default function HomePage() {
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 mt-12">
-              <Card className="border-0 shadow-sm">
+              <Card className="border-0 shadow-sm bg-white">
                 <CardHeader>
-                  <Zap className="h-10 w-10 text-yellow-500 mb-2" />
+                  <Zap className="h-10 w-10 text-yellow-500 mb-2"/>
                   <CardTitle>Pagos Rápidos</CardTitle>
                   <CardDescription>Procesa pagos en segundos con nuestra plataforma optimizada</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-500" />
+                      <CheckCircle className="h-4 w-4 text-green-500"/>
                       <span>Confirmación instantánea</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-500" />
+                      <CheckCircle className="h-4 w-4 text-green-500"/>
                       <span>Múltiples métodos de pago</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-500" />
+                      <CheckCircle className="h-4 w-4 text-green-500"/>
                       <span>Interfaz intuitiva</span>
                     </li>
                   </ul>
                 </CardContent>
               </Card>
-              <Card className="border-0 shadow-sm">
+              <Card className="border-0 shadow-sm bg-white">
                 <CardHeader>
-                  <ShieldCheck className="h-10 w-10 text-yellow-500 mb-2" />
+                  <ShieldCheck className="h-10 w-10 text-yellow-500 mb-2"/>
                   <CardTitle>Seguridad Avanzada</CardTitle>
                   <CardDescription>Protección completa para tus transacciones y datos</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-500" />
+                      <CheckCircle className="h-4 w-4 text-green-500"/>
                       <span>Encriptación de 256-bit</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-500" />
+                      <CheckCircle className="h-4 w-4 text-green-500"/>
                       <span>Cumplimiento PCI DSS</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-500" />
+                      <CheckCircle className="h-4 w-4 text-green-500"/>
                       <span>Detección de fraudes</span>
                     </li>
                   </ul>
                 </CardContent>
               </Card>
-              <Card className="border-0 shadow-sm">
+              <Card className="border-0 shadow-sm bg-white">
                 <CardHeader>
-                  <Globe className="h-10 w-10 text-yellow-500 mb-2" />
+                  <Globe className="h-10 w-10 text-yellow-500 mb-2"/>
                   <CardTitle>Cobertura Global</CardTitle>
                   <CardDescription>Acepta pagos desde cualquier parte del mundo</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-500" />
+                      <CheckCircle className="h-4 w-4 text-green-500"/>
                       <span>Múltiples divisas</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-500" />
+                      <CheckCircle className="h-4 w-4 text-green-500"/>
                       <span>Conversión automática</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-500" />
+                      <CheckCircle className="h-4 w-4 text-green-500"/>
                       <span>Soporte internacional</span>
                     </li>
                   </ul>
@@ -168,6 +169,7 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+        <br/><br/><br/>
       </main>
     </div>
   )
