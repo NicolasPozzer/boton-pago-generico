@@ -22,7 +22,11 @@ export default function PagoConServipag({ amount }: PagoConServipagProps) {
       setLoading(true);
       setError(null);
 
-      const paymentData = getDefaultPaymentData(amount); // Pasamos el monto aquí
+      const paymentData = getDefaultPaymentData(amount);
+      
+      // Almacenar el ID de transacción en localStorage
+      localStorage.setItem('servipag_transaction_id', paymentData.id_tx_pago);
+      
       const response = await paymentService.processPayment(paymentData);
 
       // Crear y enviar el formulario

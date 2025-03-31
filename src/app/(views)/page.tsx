@@ -1,11 +1,59 @@
+"use client"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { CheckCircle, CreditCard, ShieldCheck, Zap, Globe } from "lucide-react"
+import React, {useEffect, useState} from "react";
 
 export default function HomePage() {
+  const [transactionId, setTransactionId] = useState<string | null>(null)
+
+  useEffect(() => {
+    // Verificar si existe un ID de transacción en caché
+    const storedTransactionId = localStorage.getItem('servipag_transaction_id')
+    if (storedTransactionId) {
+      setTransactionId(storedTransactionId)
+    }
+  }, [])
+
   return (
+    <>
+
+      {transactionId && (
+        <div className="fixed  right-4 bg-yellow-100 border border-yellow-400 text-yellow-700 px-4 py-3 rounded shadow-lg w-72">
+          <div className="flex justify-between items-center">
+            <span className="font-bold">Ultimo Pago Realizado</span>
+            <button
+              onClick={() => setTransactionId(null)}
+              className="text-yellow-700 hover:text-yellow-900 font-bold text-lg"
+            >
+              &times;
+            </button>
+          </div>
+          <div className="text-sm mt-2">
+            ID de Transacción: <span className="font-mono">{transactionId}</span>
+            <button
+              onClick={() => {
+                navigator.clipboard.writeText(transactionId);
+                alert('ID copiado al portapapeles');
+              }}
+              className="ml-2 text-sm underline hover:text-yellow-900"
+            >
+              Copiar
+            </button>
+          </div>
+          <div className="text-sm mt-2">
+            <a
+              href="/postulacion/check-pago"
+              className="text-yellow-900 hover:text-yellow-950 underline"
+            >
+              Verificar estado del pago
+            </a>
+          </div>
+        </div>
+      )}
+
     <div className="flex flex-col min-h-screen rounded rounded-2">
       {/* Navbar */}
       <header className="border-b bg-white">
@@ -172,6 +220,7 @@ export default function HomePage() {
         <br/><br/><br/>
       </main>
     </div>
+    </>
   )
 }
 
