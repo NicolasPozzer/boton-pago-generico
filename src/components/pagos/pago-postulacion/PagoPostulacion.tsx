@@ -79,7 +79,7 @@ export default function PagoPostulacion() {
                 <div className="bg-gray-50 p-4 rounded-lg">
                   <h3 className="font-semibold text-lg mb-2">Resumen de compra</h3>
                   <div className="flex justify-between">
-                    <span>Postulacion Prueba</span>
+                    <span>Postulacion</span>
                     <span>${amount || "10"}</span>
                   </div>
                   <div className="flex justify-between font-bold mt-2">
@@ -101,8 +101,7 @@ export default function PagoPostulacion() {
                   <AccordionItem value="item-1">
                     <AccordionTrigger>Política de reembolso</AccordionTrigger>
                     <AccordionContent>
-                      Ofrecemos un reembolso completo dentro de los primeros 30 días de la compra si no estás satisfecho
-                      con el curso.
+                      Ofrecemos un reembolso completo dentro de los primeros 30 días de la compra si no estás satisfecho.
                     </AccordionContent>
                   </AccordionItem>
                 </Accordion>

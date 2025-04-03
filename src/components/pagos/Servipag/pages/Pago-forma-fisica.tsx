@@ -185,7 +185,7 @@ export default function PaymentPage() {
                     <p className="text-2xl font-bold">${paymentAmount}</p>
                   </div>
                   <Badge variant="outline" className="text-sm px-3 py-1">
-                    Postulación Esc. Militar
+                    Postulación
                   </Badge>
                 </div>
 
@@ -222,7 +222,7 @@ export default function PaymentPage() {
                         <ol className="list-decimal pl-5 mt-2 space-y-1">
                           <li>Realiza una transferencia al Banco Estado</li>
                           <li>Cuenta Corriente: 9876543210</li>
-                          <li>Titular: Escuela Militar</li>
+                          <li>Titular: Andestic.</li>
                           <li>RUT: 61.101.XXX-X</li>
                           <li>Incluye el código de pago en el comentario</li>
                         </ol>
@@ -308,7 +308,7 @@ export default function PaymentPage() {
 
         {paymentCode && !isSuccess && (
           <div className="mt-6 text-center text-sm text-slate-500">
-            <p>Si tienes problemas con el pago, contacta a soporte@escuelamilitar.cl</p>
+            <p>Si tienes problemas con el pago, contacta a soporte@andestic.com</p>
           </div>
         )}
       </div>

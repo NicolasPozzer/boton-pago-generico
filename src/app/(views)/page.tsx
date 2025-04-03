@@ -60,7 +60,7 @@ export default function HomePage() {
         <div className="container flex h-16 items-center justify-between px-4 md:px-6">
           <div className="flex items-center gap-2">
             <CreditCard className="h-6 w-6 text-yellow-500" />
-            <span className="text-xl font-bold">Demo Sistema de Pago</span>
+            <span className="text-xl font-bold">Sistema de Pago</span>
           </div>
         </div>
       </header>
@@ -201,11 +201,7 @@ export default function HomePage() {
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-green-500"/>
-                      <span>Múltiples divisas</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-500"/>
-                      <span>Conversión automática</span>
+                      <span>Configuracion automática</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-green-500"/>
