@@ -65,7 +65,7 @@ export default function StatusPage() {
                 Estado
               </label>
               <p className={`font-bold ${
-                status.estado === 'APROBADO' ? 'text-green-600' :
+                status.estado === 'APROBADA' ? 'text-green-600' :
                   status.estado === 'PENDIENTE' ? 'text-yellow-600' :
                     'text-red-600'
               }`}>

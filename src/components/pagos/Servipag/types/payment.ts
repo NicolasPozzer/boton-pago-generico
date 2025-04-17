@@ -29,7 +29,7 @@ export interface ReceptionResponse {
 
 export interface TransactionStatus {
   id_tx_cliente: string;
-  estado: 'PENDIENTE' | 'APROBADO' | 'RECHAZADO' | 'ERROR';
+  estado: 'PENDIENTE' | 'APROBADA' | 'RECHAZADA' | 'ERROR';
   fecha_actualizacion?: string;
   detalle?: string;
   error?: string;
