@@ -108,7 +108,7 @@ export default function PagoPostulacion() {
                 <input
                   type="number"
                   value={amount}
-                  placeholder="Ingrese monto de prueba"
+                  placeholder="Ingrese monto"
                   onChange={handleAmountChange}
                   className="border p-2 rounded w-full text-center"
                 />
@@ -147,7 +147,7 @@ export default function PagoPostulacion() {
                 {/* Pago de Manera Fisica */}
 
 
-                <a
+                {/*<a
                   href={`/postulacion/pago-postulacion/pago-forma-fisica?amount=${amount}`}
                   className="w-full transition-transform hover:scale-105 focus:outline-none disabled:opacity-50"
                 >
@@ -157,7 +157,7 @@ export default function PagoPostulacion() {
                       <Building className="h-5 w-5"/> Pago En Sucursal Servipag
                     </Button>
                   </div>
-                </a>
+                </a>*/}
 
 
               </div>

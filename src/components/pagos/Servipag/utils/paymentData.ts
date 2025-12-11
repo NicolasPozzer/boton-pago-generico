@@ -21,8 +21,8 @@ export const getDefaultPaymentData = (amount: string): PaymentData => {
     monto_total_deuda: amount || '10',
     numero_boletas: '1',
     nombre_cliente: 'Cliente Prueba',
-    rut_cliente: '123456789',
-    email_cliente: 'nicolas@andestic.com',
+    rut_cliente: '',
+    email_cliente: '',
     id_sub_tx: `1`,
     identificador: `${Date.now()}`,
     boleta: '0', // ACA VA el campo id nroCuota

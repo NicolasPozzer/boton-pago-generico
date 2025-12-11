@@ -83,7 +83,7 @@ export default function HomePage() {
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <a href="/postulacion/pago-postulacion">
                     <Button className="bg-yellow-400 hover:bg-yellow-500 text-black">
-                      <CreditCard className="mr-2 h-4 w-4"/> Realizar Pago de Prueba
+                      <CreditCard className="mr-2 h-4 w-4"/> Realizar Pago
                     </Button>
                   </a>
                   <Button variant="outline" className="border-gray-200">
