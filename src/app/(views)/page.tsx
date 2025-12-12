@@ -23,7 +23,7 @@ export default function HomePage() {
       {transactionId && (
         <div className="fixed  right-4 bg-yellow-100 border border-yellow-400 text-yellow-700 px-4 py-3 rounded shadow-lg w-72">
           <div className="flex justify-between items-center">
-            <span className="font-bold">Ultimo Pago Realizado</span>
+            <span className="font-bold">Ultimo Pago Generado</span>
             <button
               onClick={() => setTransactionId(null)}
               className="text-yellow-700 hover:text-yellow-900 font-bold text-lg"

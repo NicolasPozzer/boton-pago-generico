@@ -78,9 +78,9 @@ export default function PagoPostulacion() {
             {step === 1 ? (
               <>
                 <div className="bg-gray-50 p-4 rounded-lg">
-                  <h3 className="font-semibold text-lg mb-2">Resumen de compra</h3>
+                  <h3 className="font-semibold text-lg mb-2">Resumen de Pago</h3>
                   <div className="flex justify-between">
-                    <span>Postulacion</span>
+                    <span>Monto</span>
                     <span>${amount || "10"}</span>
                   </div>
                   <div className="flex justify-between font-bold mt-2">
