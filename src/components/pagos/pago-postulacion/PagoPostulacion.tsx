@@ -19,6 +19,7 @@ import PagoConServipag from "@/components/pagos/Servipag/pages/pago-con-servipag
 import RecepcionaPage from "@/components/pagos/Servipag/pages/recepciona";
 import PagoFormaFisica from "@/components/pagos/Servipag/pages/Pago-forma-fisica";
 import { Building } from "lucide-react"
+import {Textarea} from "@/components/ui/textarea";
 
 export default function PagoPostulacion() {
   const [loading, setLoading] = useState(false)
@@ -98,11 +99,11 @@ export default function PagoPostulacion() {
                 </Alert>
 
                 <Accordion type="single" collapsible>
-                  <AccordionItem value="item-1">
+                  <AccordionItem value="item-1">{/*
                     <AccordionTrigger>Política de reembolso</AccordionTrigger>
                     <AccordionContent>
                       Ofrecemos un reembolso completo dentro de los primeros 30 días de la compra si no estás satisfecho.
-                    </AccordionContent>
+                    </AccordionContent>*/}
                   </AccordionItem>
                 </Accordion>
                 <input
@@ -112,11 +113,14 @@ export default function PagoPostulacion() {
                   onChange={handleAmountChange}
                   className="border p-2 rounded w-full text-center"
                 />
+                <p>
+                  Ingrese el monto mayor o igual a $10, y sin <strong>Decimales.</strong>
+                </p>
               </>
             ) : (
               <div className="space-y-6">
-                <div className="max-w-lg mx-auto bg-white">
-                  <Recibo {...receiptData} />
+              <div className="max-w-lg mx-auto bg-white">
+                <Recibo {...receiptData} />
                   <div className="flex flex-wrap gap-4 print:hidden">
                     <Button
                       className="flex-1 min-w-[150px] bg-yellow-400 hover:bg-yellow-500 text-black"
